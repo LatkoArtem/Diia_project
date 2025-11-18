@@ -1,0 +1,141 @@
+/* src/App.css */
+:root {
+  --primary: #000000;
+  --bg: #f9fafb;
+  --surface: #ffffff;
+  --border: #e5e7eb;
+  --accent: #b2f5ea; /* Світло-м'ятний, схожий на Дію */
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--primary);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px; /* Мобільний вигляд */
+  background: var(--surface);
+  min-height: 100vh;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+  background: black;
+  border-radius: 50%;
+}
+
+main {
+  padding: 20px;
+  flex: 1;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+p {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card:hover {
+  border-color: black;
+  background: #fafafa;
+}
+.card h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+.card span {
+  font-size: 13px;
+  color: #888;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: 2px solid black;
+  border-color: transparent;
+}
+
+button.primary {
+  background: black;
+  color: white;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button.primary:disabled {
+  opacity: 0.5;
+}
+
+.success-box {
+  background: #ecfdf5;
+  border: 1px solid #10b981;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.download-btn {
+  display: inline-block;
+  background: #10b981;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-weight: bold;
+}
