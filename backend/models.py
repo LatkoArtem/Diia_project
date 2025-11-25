@@ -24,7 +24,6 @@ class ContractTemplate(Base):
 class ContractSession(Base):
     __tablename__ = "contract_sessions"
 
-    # --- ВИПРАВЛЕНО ТУТ: UUID(as_uuid=True) замінено на String ---
     id = Column(String, primary_key=True, default=lambda: str(uuid.uuid4()))
     template_id = Column(Integer, ForeignKey("contract_templates.id"))
     user_id = Column(Integer, nullable=True)
@@ -38,9 +37,7 @@ class ContractSession(Base):
 class GeneratedContract(Base):
     __tablename__ = "generated_contracts"
 
-    # --- ВИПРАВЛЕНО ТУТ: UUID(as_uuid=True) замінено на String ---
     id = Column(String, primary_key=True, default=lambda: str(uuid.uuid4()))
-    # --- І ТУТ: ForeignKey тепер посилається на String ---
     session_id = Column(String, ForeignKey("contract_sessions.id"))
     file_path = Column(String, nullable=False)
     signed_file_path = Column(String, nullable=True)
