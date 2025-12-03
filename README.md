@@ -1,2 +1,4 @@
 DEMO VIDEO
 YouTube: https://youtu.be/XLWUxPAxrvM
+
+AI-powered Legal Document Constructor (Diia): Developed a full-stack conversational AI platform that automates legal contract creation, replacing static forms with an interactive dialogue. Engineered a state-aware backend using FastAPI and Azure OpenAI to manage context-driven data collection logic ("field groups") and intent recognition for natural language corrections. Implemented a robust hybrid validation system combining Pydantic for strict compliance checks with algorithmic formatters for text normalization. Built a dynamic template ingestion pipeline using Groq (Llama 3.1) to parse raw .docx files, detect placeholders, and auto-generate user-friendly questions. Designed a style-preserving document generator that inserts data into complex Word templates without breaking formatting. Technologies: Python, FastAPI, React, SQLite, SQLAlchemy, Azure OpenAI, Groq API.
